@@ -1,0 +1,197 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="footer.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>About Me - Rai Garcia</title>
+		<head>
+			<style>
+		 /* CSS for centering and image stacking */
+		 .image-container {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .carousel-image {
+            width: 100px;
+            height: 100px;
+            border: 5px solid transparent;
+            transition: transform 0.3s;
+        }
+
+        .carousel-image:hover {
+            transform: scale(1.2);
+        }
+
+        .large-image-box {
+            text-align: center;
+            position: relative;
+        }
+
+        #large-image {
+            width: 600px;
+            height: 300px;
+            border: 5px solid transparent;
+        }
+
+        #image-caption {
+            font-weight: bold;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            background-color: white;
+            padding: 5px;
+        }
+
+		.segment-divider {
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+	</head>
+
+
+	<body>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>	
+		
+		<div class="topnav">
+            <ul>
+            <li><a class="active" href="Home2.html"><i class="fa-solid fa-house fa-bounce"></i>Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-dumbbell fa-bounce"></i>My Workout Plan</a>
+              <div class="sub-nav-menu1">
+                <ul>
+                  <li><a href="Antagonistic.html">Antagonistic Workout Plan</li>
+                  <li><a href="ULUWP.html">Up Low Up Workout Plan</li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="active" href="#"><i class="fa-regular fa-image fa-bounce"></i>Photo Showcase</a>
+              <div class="sub-nav-menu1">
+                <ul>
+                  <li><a href="Carshowcase.html">Car Showcase</li>
+                  <li><a href="Gameplayscreenshots.html">Gameplay Screenshots</li>
+                  <li><a href="Randomphotos.html">Random Photos</li> 
+                </ul>
+              </div>	
+            </li>
+            <li><a href="#"><i class="fa-solid fa-gamepad fa-bounce"></i>My Likes & Hobbies</a>
+              <div class="sub-nav-menu1">
+                <ul>
+                  <li><a href="Games.html">Games I Play</li>
+                  <li><a href="Movies.html">Movies I Like</li>
+                  <li><a href="Shows.html">Series I Like</li>
+                  <li><a href="Skills.html">Skills and Hobbies</li>
+                  
+                </ul>
+              </div>	
+            </li>
+            <li><a href="#"><i class="fa-solid fa-video fa-bounce"></i>Clips and Recordings</a>
+                <div class="sub-nav-menu1">
+                  <ul>
+                    <li><a href="clipsapex.html">Apex Legends</li>
+                    <li><a href="clipsphasmo.html">Phasmophobia</li>
+                    <li><a href="clipsgta.html">Grand Theft Auto V</li>
+                    <li><a href="clipsrandom.html">Random Clips</li>
+                  </ul>
+                </div>	
+              </li>
+            <li><a href="RKGarcia_ContactUs.html"><i class="fa-solid fa-message fa-bounce"></i>Contact Us</a></li>
+            </ul>
+          </div>
+
+		<div class="image-container">
+            <div>
+                <img src="Images/0_0.png" onmouseover="displayLargeImage(this, '')" onclick="image1()" class="carousel-image">
+            </div>
+            <div>
+                <img src="Images/gtav.jpg" onmouseover="displayLargeImage(this, '')" onclick="image2()" class="carousel-image">
+            </div>
+            <div>
+                <img src="Images/poorest1.png" onmouseover="displayLargeImage(this, '')" onclick="image3()" class="carousel-image">
+            </div>
+            <div>
+                <img src="Images/poorest.png" onmouseover="displayLargeImage(this, '')" onclick="image4()" class="carousel-image">
+            </div>
+            <div>
+                <img src="Images/poorest2.png" onmouseover="displayLargeImage(this, '')" onclick="image5()" class="carousel-image">
+            </div>
+            <div>
+                <img src="Images/mencraft.png" onmouseover="displayLargeImage(this, '')" onclick="image6()" class="carousel-image">
+            </div>
+			<div>
+                <img src="Images/Screenshot 2023-10-15 152612.png" onmouseover="displayLargeImage(this, '')" onclick="image6()" class="carousel-image">
+            </div>
+			<div>
+                <img src="Images/screenshot.png" onmouseover="displayLargeImage(this, '')" onclick="image6()" class="carousel-image">
+            </div>
+			<div>
+                <img src="Images/screenshot1.png" onmouseover="displayLargeImage(this, '')" onclick="image6()" class="carousel-image">
+            </div>
+			<div>
+                <img src="Images/screenshot2.png" onmouseover="displayLargeImage(this, '')" onclick="image6()" class="carousel-image">
+            </div>
+			<div>
+                <img src="Images/screenshot3.png" onmouseover="displayLargeImage(this, '')" onclick="image6()" class="carousel-image">
+            </div>
+        </div>
+			<div class="segment-divider"></div>
+			<div class="large-image-box">
+				<img id="large-image" src="Images/0_0.png" alt="Large Image" onclick="openImage()" style="cursor: pointer; width: 1600px; height: 900px;">
+			</div>
+			<div class="segment-divider"></div>
+			<div class="segment-divider"></div>
+			<div class="segment-divider"></div>
+	</body>
+		
+		<script>
+			// JavaScript functions for image interactions
+			var largeImage = document.getElementById("large-image");
+			var imageCaption = document.getElementById("image-caption");
+		
+			function displayLargeImage(img, caption) {
+				largeImage.src = img.src;
+				imageCaption.textContent = caption;
+			}
+		
+		</script>
+
+<footer class="footer" style="background-color: #3c4444;">
+  <div class="container">
+   <div class="row">
+     <div class="footer-col">
+       <h4>Personal Information</h4>
+       <ul>
+         <li><a href="#">Phone Number: 09952160185</a></li>
+         <li><a href="#">Email: raigarcia101@yahoo.com</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>School Information</h4>
+       <ul>
+         <li><a href="https://www.feutech.edu.ph"> FEU Institute of Technology</a></li>
+         <li><a href="https://maps.app.goo.gl/HgtWY4ozbU7DN4469">University Address: 
+          P. Paredes St., Sampaloc, Manila 1015</a></li>
+         <li><a href="#">My University Email: 202210348@fit.edu.ph</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Follow Me</h4>
+       <div class="social-links">
+         <a href="https://www.facebook.com/rai.garcia2"><i class="fa-brands fa-facebook-f fa-beat"></i></a>
+         <a href="https://twitter.com/Bakudannny"><i class="fa-brands fa-twitter fa-beat"></i></a>
+         <a href="https://www.instagram.com/raiigarc/"><i class="fa-brands fa-instagram fa-beat"></i></i></a>
+         <a href="https://www.tiktok.com/@bakudanzz"><i class="fa-brands fa-tiktok fa-beat"></i></a>
+       </div>
+     </div>
+   </div>
+  </div>
+</footer>
+	</body>
+</html>		

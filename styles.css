@@ -1,0 +1,285 @@
+
+
+
+.image-grid {
+    display: flex;
+    overflow: auto;
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.small-image {
+    width: 100px;
+    height: auto;
+}
+
+.small-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 100px;
+}
+
+
+@font-face {
+    font-family: 'CaylaStylish';
+    src: url('Font/Cayla Stylish.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'StylishScript';
+    src: url('Font/Stylish Script.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GamesScript';
+    src: url('Font/Games.ttf') format('opentype')
+}
+
+@font-face {
+    font-family: 'Gymkhana';
+    src: url('Font/gymkhana-bk.otf') format('opentype')
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('Font/coolvetica\ rg.otf') format('opentype')
+}
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', 'Dosis', 'Kanit', sans-serif; /* Use the desired font stack */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('Images/pxfuel.jpg');
+}
+
+
+  /* Styles for the outer container */
+  .outer-container {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0); /* Adjust the last parameter (0.5) for the desired level of transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles for the inner container */
+.inner-container {
+    width: 1600px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3c4444;
+    padding: 10px;
+}
+
+
+.topnav {
+    background-color: #f24343; /* Adjust the alpha channel (last parameter) for transparency */
+    text-align: center;
+}
+
+.topnav ul {
+    display: inline-flex;
+    list-style: none;
+    color: #ffffff;
+}
+
+.topnav ul li{
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.topnav ul li a{
+    text-decoration: none;
+    color: #fffefe;
+} 
+
+.active, .topnav ul li a:hover{
+    color: #fd4444;
+    background-color: #fffefe;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+.topnav .fa{
+    margin-right: 8px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sub-nav-menu1 {
+    display: none;
+    z-index: 1000;
+ }
+ 
+ .topnav ul li:hover .sub-nav-menu1 {
+    display: block;
+    position: absolute;
+    background-color: #f24343;
+    margin-top: 15px;
+    margin-left: 15px;
+ }
+
+ .topnav ul li:hover .sub-nav-menu1 ul{
+    display: block;
+    margin: 1px;
+
+ }
+
+ .topnav ul li:hover .sub-nav-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+ }
+
+ .topnav ul li:hover .sub-nav-menu1 ul li a:hover{
+    color: #f24343;
+ }
+
+ .topnav ul li a.active {
+  color: #f24343; /* Change this to your desired color */
+}
+
+.topnav ul li a.active + .sub-nav-menu1 ul li a {
+  color: #fffefe; /* Change this to your desired color */
+}
+
+ .form-container {
+    width: 400px;
+    background: #34393d;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fffefe;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #fd4444;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #f24343;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #94343c;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #94343c;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #fffefe;
+    font-weight: 600;
+    width: 40%;
+    background: #c63030;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  
